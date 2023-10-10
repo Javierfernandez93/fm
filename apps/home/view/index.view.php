@@ -27,7 +27,7 @@
                     </div>
                 </div>
 
-                <div class="row text-center">
+                <div class="row text-center justify-content-center">
                     <div class="col-12 col-xl-4 mb-3 mb-xl-0">
                         <div class="card shadow-xl bg-success border-radius-2xl overflow-hidden">
                             <img src="../../src/img/home-1.jpg" class="card-img-top">
