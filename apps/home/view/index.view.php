@@ -7,9 +7,9 @@
             <div class="container align-items-center">
                 <div class="row align-items-center">
                     <div class="col-12 col-xl-6">
-                        <h1 class="text-white">FRANQUICIA</h1>
-                        <h3 class="text-white">DE ENTRETENIMIENTO</h3>
-                        <p class="lead text-white">Gana hasta +$100 USD (por semana) con nuestra franquicia educativa de entretenimiento</p>
+                        <h1 class="text-white">Funnel</h1>
+                        <h3 class="text-white">MILLIONARIO</h3>
+                        <p class="lead text-white">¡Bienvenido a Funnel Millonario! 💰📺 Descubre una experiencia única de IPTV en multinivel. 💎 ¡Únete a nosotros hoy y cambia tu vida! 🔥🚀</p>
 
                         <button @click="viewVideo" class="btn mt-3 btn-lg btn-primary">Conoce más</button>
                     </div>
@@ -43,7 +43,7 @@
                             <span class="position-absolute shadow icon number top-0 text-white bg-gradient-success fs-1 start-0 ms-2 mt-2"><i class="bi bi-tv"></i></span>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-4 mb-3 mb-xl-0">
+                    <div class="col-12 col-xl-4 mb-3 mb-xl-0 d-none">
                         <div class="card shadow-xl bg-success border-radius-2xl overflow-hidden">
                             <img src="../../src/img/home-2.jpg" class="card-img-top">
 
@@ -75,7 +75,7 @@
     <section class="row py-5 text-white text-center bg-dark" id="target">
         <div class="col-12">
             <div class="section">
-                <h1 class="text-white display-5 fw-sembold">¿PARA QUIÉN ESTÁ DIRIGIDO <span class="text-warning border-bottom border-5 border-warning">MoneyTv?</span></h1>
+                <h1 class="text-white display-5 fw-sembold">¿PARA QUIÉN ESTÁ DIRIGIDO <span class="text-warning border-bottom border-5 border-warning">Funnel Millionario?</span></h1>
             </div>
         </div>
     </section>
@@ -252,8 +252,8 @@
                             <img src="../../src/img/home-4.jpg" class="card-img-top" alt="cursos">
                             
                             <div class="card-body">
-                                <h4 class="text-white">Gana por tus Franquicias</h4>
-                                <p>Recibirás $10 USD cada vez que una franquicia se active o se mantenga activa mes con mes</p>
+                                <h4 class="text-white">Gana por tus referidos</h4>
+                                <p>Recibirás $8.5 USD cada vez que una franquicia se active o se mantenga activa mes con mes</p>
                             </div>
                         </div>
                     </div>
