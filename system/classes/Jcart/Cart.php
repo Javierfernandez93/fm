@@ -70,6 +70,7 @@ class Cart
 	public function loadSessionInstances() 
 	{
 		$this->loadSessionsInstance();
+		$instances = [];
 		
 		$instances_ids = $this->Sessions->getData();
 
