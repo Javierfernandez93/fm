@@ -62,6 +62,12 @@
                                 <span class="nav-link-text ms-1"><?php echo JFStudio\Router::getName(JFStudio\Router::Backoffice); ?></span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if (in_array($route, [JFStudio\Router::StoreMarketing])) { ?>active<?php } ?>" href="../../apps/store/package">
+                                <i class="bi bi-cup-fill"></i>
+                                <span class="nav-link-text ms-1">Activación</span>
+                            </a>
+                        </li>
                         
                         <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#pagesUsers" class="nav-link collapsed <?php if (in_array($route,[JFStudio\Router::Referrals,JFStudio\Router::Academy, JFStudio\Router::AcademyLesson, JFStudio\Router::Payments])) { ?>active<?php } ?>" aria-controls="pagesUsers" role="button" aria-expanded="false">

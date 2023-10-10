@@ -8,7 +8,7 @@ $UserLogin = new MoneyTv\UserLogin;
 
 if($UserLogin->_loaded === true)
 {
-    $data['active'] = (new MoneyTv\LicencePerUser)->isActive($UserLogin->company_id);
+    $data['active'] = true;
     $data["s"] = 1;
 	$data["r"] = "DATA_OK";
 } else {

@@ -599,6 +599,7 @@ class Cart
 	 				} else {
 	 					if($item['item']->getId() === (int)$id)
 		 				{
+							$item['offer'] = isset($item['offer']) ? $item['offer'] : false;
 		 					if(($search_offer == false && $item['offer'] == false) || ($search_offer == true && $item['offer'] == true))
 		 					{
 			 					if($search_only_key === true)
