@@ -24,7 +24,7 @@ class Cart
 
 	public $_instance_id = null;
 	
-	public $items;
+	public $items = [];
 	public $amount;
 	public $discount;
 
@@ -528,6 +528,7 @@ class Cart
  			return true;
  		} else {
  			$this->items[] = is_array($data) ? $data : [];
+
  			return true;
  		}
 
