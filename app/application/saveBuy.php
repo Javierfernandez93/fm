@@ -79,7 +79,7 @@ function createTransactionAirtm(MoneyTv\BuyPerUser $BuyPerUser = null,MoneyTv\Us
 		'email' => JFStudio\Airtm::CUSTOMER_EMAIL,
 		'unix_time' => time(),
 		// 'checkout_url' => "http://localhost:8888/funnels7/apps/airtm/process".$UserLogin->getPidQuery()."&txn_id={$BuyPerUser->invoice_id}"
-		'checkout_url' => "https://www.moneytv.site/apps/airtm/process".$UserLogin->getPidQuery()."&txn_id={$BuyPerUser->invoice_id}"
+		'checkout_url' => "https://www.fm.moneytv.site/apps/airtm/process".$UserLogin->getPidQuery()."&txn_id={$BuyPerUser->invoice_id}"
 	];
 }
 
@@ -118,7 +118,7 @@ function createTransactionFromCoinPayments(MoneyTv\BuyPerUser $BuyPerUser = null
 			'custom' => $BuyPerUser->invoice_id,
 			'item_number' => $BuyPerUser->invoice_id,
 			'address' => '', // leave blank send to follow your settings on the Coin Settings page
-			'ipn_url' => 'https://www.moneytv.site/app/cronjob/ipn_coinpayments.php',
+			'ipn_url' => 'https://www.fm.moneytv.site/app/cronjob/ipn_coinpayments.php',
 		];
 						
 		$result = $CoinpaymentsAPI->CreateCustomTransaction($req);
