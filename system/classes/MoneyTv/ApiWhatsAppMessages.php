@@ -4,28 +4,28 @@ namespace MoneyTv;
 
 class ApiWhatsAppMessages {
     const WELCOME_ARRAY = [
-        "😁 Hola *{{name}}*, estamos muy felices de que te hayas unido a *MoneyTv*.\n\n👉 Comienza a aprender como vender tu producto en el siguiente link:\n👉zuum.link/EducacionMoneyTV",
-        "🥳 Gracias por unirte a *MoneyTv*, *{{name}}*.\n\n👉 Aprende como vender tu producto en el siguiente link:\n👉zuum.link/EducacionMoneyTV",
-        "😎 *{{name}}* Enhorabuena queremos darte la bienvenida en *MoneyTv*.\n\n👉 Aprende como vender tu producto en el siguiente link:\n 👉zuum.link/EducacionMoneyTV",
-        "🥹 Genial *{{name}}* te has unido a *MoneyTv*.\n\n👉 Aprende como vender tu producto en el siguiente link:\n👉zuum.link/EducacionMoneyTV",
+        "😁 Hola *{{name}}*, estamos muy felices de que te hayas unido a *Funnel Millonario*.\n\n👉 Comienza a aprender como vender tu producto en el siguiente link:\n👉zuum.link/EducacionMoneyTV",
+        "🥳 Gracias por unirte a *Funnel Millonario*, *{{name}}*.\n\n👉 Aprende como vender tu producto en el siguiente link:\n👉zuum.link/EducacionMoneyTV",
+        "😎 *{{name}}* Enhorabuena queremos darte la bienvenida en *Funnel Millonario*.\n\n👉 Aprende como vender tu producto en el siguiente link:\n 👉zuum.link/EducacionMoneyTV",
+        "🥹 Genial *{{name}}* te has unido a *Funnel Millonario*.\n\n👉 Aprende como vender tu producto en el siguiente link:\n👉zuum.link/EducacionMoneyTV",
     ];
 
     const IPTV_SETUP_ARRAY = [
-        "😁 *¡Hola {{name}}!* te enviamos tus datos de acceso a *MoneyTV*: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
-        "😊 *¡Gracias {{name}}!* ahora eres parte de *MoneyTV* estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
-        "😍 *¡Muchas gracias! {{name}}* ahora eres parte de *MoneyTV* estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
+        "😁 *¡Hola {{name}}!* te enviamos tus datos de acceso a *Funnel Millonario*: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
+        "😊 *¡Gracias {{name}}!* ahora eres parte de *Funnel Millonario* estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
+        "😍 *¡Muchas gracias! {{name}}* ahora eres parte de *Funnel Millonario* estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
     ];
 
     const getNewDemoMessage = [
-        "😁 *¡Hola {{name}}!* te enviamos tus datos de acceso a *MoneyTV*: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\n👉 Si necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
-        "😊 *¡Gracias {{name}}!* ahora eres parte de *MoneyTV* estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\n👉 Si necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
-        "😍 *¡Muchas gracias! {{name}}* ahora eres parte de *MoneyTV* estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\n👉 Si necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
+        "😁 *¡Hola {{name}}!* te enviamos tus datos de acceso a *Funnel Millonario*: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\n👉 Si necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
+        "😊 *¡Gracias {{name}}!* ahora eres parte de *Funnel Millonario* estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\n👉 Si necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
+        "😍 *¡Muchas gracias! {{name}}* ahora eres parte de *Funnel Millonario* estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\n👉 Si necesitas ayuda para el correcto para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv",
     ];
 
     const IPTV_DEMO_SETUP_ARRAY = [
-        "😁 *¡Hola {{name}}!* te enviamos tus datos de acceso a *MoneyTV*: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto funcionamiento para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv\n\nRecuerda que tu demo expira en 2 horas",
-        "😎 *{{name}}*, aquí tienes tus datos de acceso a *MoneyTV*: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto funcionamiento para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv\n\nLa demo expira en 2 horas",
-        "😊 *¡Tu demo {{name}}!* de *MoneyTV*. Estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto funcionamiento para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv\n\nTu demo expira en 2 horas",
+        "😁 *¡Hola {{name}}!* te enviamos tus datos de acceso a *Funnel Millonario*: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto funcionamiento para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv\n\nRecuerda que tu demo expira en 2 horas",
+        "😎 *{{name}}*, aquí tienes tus datos de acceso a *Funnel Millonario*: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto funcionamiento para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv\n\nLa demo expira en 2 horas",
+        "😊 *¡Tu demo {{name}}!* de *Funnel Millonario*. Estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto funcionamiento para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv\n\nTu demo expira en 2 horas",
         "😍 *¡La demo para *MoneyTV {{name}}*!  aquí está. Estos son tus datos para iniciar sesión en tu servicio de IPTV: \n\n Usuario : *{{user_name}}* \n Contraseña : *{{client_password}}*\n\nSi necesitas ayuda para el correcto funcionamiento para SmarTv/Android/iPhone/iPad por favor da clic en: https://zuum.link/AyudaMoneyTv\n\nEsta demo expira en 2 horas",
     ];
     
@@ -37,9 +37,9 @@ class ApiWhatsAppMessages {
     ];
     
     const IPTV_RENOVATION_ARRAY = [
-        "😁 *¡Hola {{name}}!* ¡muchas gracias! hemos renovado tu acceso a *MoneyTV*: \n",
-        "👋🏻 *¡Gracias! {{name}}!*. Tu renovación de *MoneyTV* ya está lista",
-        "😍 *¡Enhorabuena! {{name}}!*. Ya está lista tu renovación de *MoneyTV*",
+        "😁 *¡Hola {{name}}!* ¡muchas gracias! hemos renovado tu acceso a *Funnel Millonario*: \n",
+        "👋🏻 *¡Gracias! {{name}}!*. Tu renovación de *Funnel Millonario* ya está lista",
+        "😍 *¡Enhorabuena! {{name}}!*. Ya está lista tu renovación de *Funnel Millonario*",
     ];
 
     const TICKET_DONE_ARRAY = [

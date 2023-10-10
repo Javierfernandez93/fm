@@ -39,7 +39,6 @@ class ApiWhatsApp {
             if(Util::isValidPhone($data['contact']['phone']))
             {
                 $Curl = new Curl;            
-                
 
                 $Curl->get(self::getSendWhatsAppUrl(), array_merge([
                     'id' => $data['id'] ?? 1,
