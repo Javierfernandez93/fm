@@ -9,7 +9,7 @@
                     <div class="col-12 col-xl-6">
                         <h1 class="text-white">FUNNEL</h1>
                         <h2 class="text-white">MILLIONARIO</h2>
-                        <div class="h2 fw-light text-white">¡Bienvenido a Funnel Millonario! 💰📺 Descubre una experiencia única de IPTV en multinivel. 💎 ¡Únete a nosotros hoy y cambia tu vida! 🔥🚀</div>
+                        <div class="h3 mt-3 fw-light text-white">¡Bienvenido a Funnel Millonario! 💰📺 Descubre una experiencia única de IPTV en multinivel. 💎 ¡Únete a nosotros hoy y cambia tu vida! 🔥🚀</div>
 
                         <button @click="viewVideo" class="btn mt-3 btn-lg btn-primary">Conoce más</button>
                     </div>
