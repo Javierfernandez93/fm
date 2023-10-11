@@ -521,7 +521,7 @@ class Cart
  			$data = array_merge($data,$additional_fields);
  		}
 
-		 $this->items = $this->items ?? [];
+		 $this->items = isset($this->items) ? $this->items : [];
  		
  		if(($key = $this->exist($Item)) !== false && $search === true)
  		{
