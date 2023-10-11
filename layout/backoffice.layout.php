@@ -68,6 +68,14 @@
                                 <span class="nav-link-text ms-1">Activación</span>
                             </a>
                         </li>
+                        <?php if((new MoneyTv\BuyPerUser)->hasPackageBuy($UserLogin->company_id,1)) { ?>
+                            <li class="nav-item">
+                                <a class="nav-link <?php if (in_array($route, [JFStudio\Router::Academy])) { ?>active<?php } ?>" href="../../apps/academy">
+                                    <i class="bi bi-cup-fill"></i>
+                                    <span class="nav-link-text ms-1">Educación</span>
+                                </a>
+                            </li>
+                        <?php } ?>
                         
                         <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#pagesUsers" class="nav-link collapsed <?php if (in_array($route,[JFStudio\Router::Referrals,JFStudio\Router::Academy, JFStudio\Router::AcademyLesson, JFStudio\Router::Payments])) { ?>active<?php } ?>" aria-controls="pagesUsers" role="button" aria-expanded="false">
@@ -80,12 +88,6 @@
                                         <a class="nav-link" href="../../apps/referrals">
                                             <span class="sidenav-mini-icon"> F7 </span>
                                             <span class="sidenav-normal"> Mis referidos </span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link" href="../../apps/academy">
-                                            <span class="sidenav-mini-icon"> F7 </span>
-                                            <span class="sidenav-normal"> Educación </span>
                                         </a>
                                     </li>
                                 </ul>
