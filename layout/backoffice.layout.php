@@ -92,15 +92,7 @@
                                     </ul>
                                 </div>
                             </li>
-
                         <?php } ?>
-                        
-                        <li class="nav-item d-none">
-                            <a class="nav-link <?php if ($route == JFStudio\Router::Gains) { ?>active<?php } ?>" href="../../apps/gains">
-                                <i class="bi bi-coin"></i>
-                                <span class="nav-link-text ms-1"><?php echo JFStudio\Router::getName(JFStudio\Router::Gains); ?></span>
-                            </a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if ($route == JFStudio\Router::Wallet) { ?>active<?php } ?>" href="../../apps/ewallet/">
                                 <i class="bi bi-wallet2"></i>
@@ -153,6 +145,12 @@
                                     <a class="nav-link " href="../../apps/iptv/add">
                                         <span class="sidenav-mini-icon"> P </span>
                                         <span class="sidenav-normal"> Dar de alta cliente </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="https://zuum.link/AyudaFunnelMillonario" target="_blank">
+                                        <span class="sidenav-mini-icon"> P </span>
+                                        <span class="sidenav-normal"> Ayuda configuración </span>
                                     </a>
                                 </li>
                             </ul>
