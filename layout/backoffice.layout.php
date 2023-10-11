@@ -75,24 +75,25 @@
                                     <span class="nav-link-text ms-1">Educación</span>
                                 </a>
                             </li>
+                            
+                            <li class="nav-item">
+                                <a data-bs-toggle="collapse" href="#pagesUsers" class="nav-link collapsed <?php if (in_array($route,[JFStudio\Router::Referrals,JFStudio\Router::Academy, JFStudio\Router::AcademyLesson, JFStudio\Router::Payments])) { ?>active<?php } ?>" aria-controls="pagesUsers" role="button" aria-expanded="false">
+                                    <i class="bi bi-people"></i>
+                                    <span class="nav-link-text ms-1">Referidos</span>
+                                </a>
+                                <div class="collapse" id="pagesUsers">
+                                    <ul class="nav ms-4">
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="../../apps/referrals">
+                                                <span class="sidenav-mini-icon"> F7 </span>
+                                                <span class="sidenav-normal"> Mis referidos </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
                         <?php } ?>
-                        
-                        <li class="nav-item">
-                            <a data-bs-toggle="collapse" href="#pagesUsers" class="nav-link collapsed <?php if (in_array($route,[JFStudio\Router::Referrals,JFStudio\Router::Academy, JFStudio\Router::AcademyLesson, JFStudio\Router::Payments])) { ?>active<?php } ?>" aria-controls="pagesUsers" role="button" aria-expanded="false">
-                                <i class="bi bi-people"></i>
-                                <span class="nav-link-text ms-1">Referidos</span>
-                            </a>
-                            <div class="collapse" id="pagesUsers">
-                                <ul class="nav ms-4">
-                                    <li class="nav-item ">
-                                        <a class="nav-link" href="../../apps/referrals">
-                                            <span class="sidenav-mini-icon"> F7 </span>
-                                            <span class="sidenav-normal"> Mis referidos </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
                         
                         <li class="nav-item d-none">
                             <a class="nav-link <?php if ($route == JFStudio\Router::Gains) { ?>active<?php } ?>" href="../../apps/gains">
