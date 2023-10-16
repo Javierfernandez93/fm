@@ -70,14 +70,14 @@
                         </li>
                         <?php if((new MoneyTv\BuyPerUser)->hasPackageBuy($UserLogin->company_id,1)) { ?>
                             <li class="nav-item">
-                                <a class="nav-link <?php if (in_array($route, [JFStudio\Router::Academy])) { ?>active<?php } ?>" href="../../apps/academy">
+                                <a class="nav-link <?php if (in_array($route, [JFStudio\Router::Academy,JFStudio\Router::Academy, JFStudio\Router::AcademyLesson])) { ?>active<?php } ?>" href="../../apps/academy">
                                     <i class="bi bi-cup-fill"></i>
                                     <span class="nav-link-text ms-1">Educación</span>
                                 </a>
                             </li>
                             
                             <li class="nav-item">
-                                <a data-bs-toggle="collapse" href="#pagesUsers" class="nav-link collapsed <?php if (in_array($route,[JFStudio\Router::Referrals,JFStudio\Router::Academy, JFStudio\Router::AcademyLesson, JFStudio\Router::Payments])) { ?>active<?php } ?>" aria-controls="pagesUsers" role="button" aria-expanded="false">
+                                <a data-bs-toggle="collapse" href="#pagesUsers" class="nav-link collapsed <?php if (in_array($route,[JFStudio\Router::Referrals])) { ?>active<?php } ?>" aria-controls="pagesUsers" role="button" aria-expanded="false">
                                     <i class="bi bi-people"></i>
                                     <span class="nav-link-text ms-1">Referidos</span>
                                 </a>
