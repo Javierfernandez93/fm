@@ -565,7 +565,7 @@ class ServicePerClient extends Orm {
   {
     if($month == 1)
     {
-      return 78;
+      return 135;
     } else if($month == 3) {
       return 81;
     } else if($month == 6) {
