@@ -1,4 +1,4 @@
-import { UserSupport } from '../../src/js/userSupport.module.js?v=2.1.6'   
+import { UserSupport } from '../../src/js/userSupport.module.js?v=2.1.7'   
 
 const AdminiptvViewer = {
     name : 'adminiptv-viewer',

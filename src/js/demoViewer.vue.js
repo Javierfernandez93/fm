@@ -1,4 +1,4 @@
-import { Guest } from '../../src/js/guest.module.js?v=2.1.6'   
+import { Guest } from '../../src/js/guest.module.js?v=2.1.7'   
 
 const DemoViewer = {
     name : 'demo-viewer',

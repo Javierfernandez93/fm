@@ -1,5 +1,5 @@
 /* vue */
-import { RewardsViewer } from '../../src/js/rewardsViewer.vue.js?v=2.1.6'
+import { RewardsViewer } from '../../src/js/rewardsViewer.vue.js?v=2.1.7'
 
 Vue.createApp({
     components: {

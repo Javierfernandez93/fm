@@ -1,4 +1,4 @@
-import { AirtmViewer } from './airtmViewer.vue.js?v=2.1.6'
+import { AirtmViewer } from './airtmViewer.vue.js?v=2.1.7'
 
 Vue.createApp({
     components : { 

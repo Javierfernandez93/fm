@@ -1,4 +1,4 @@
-import { Http } from './http.module.js?v=2.1.6';
+import { Http } from './http.module.js?v=2.1.7';
 
 console.log(getMainPath())
 class Guest extends Http {

@@ -2,7 +2,7 @@ import { UserSupport } from '../../src/js/userSupport.module.js?t=6'
 
 /* vue */
 import { StatsViewer } from '../../src/js/statsViewer.vue.js'
-import { ProfitViewer } from '../../src/js/profitViewer.vue.js?v=2.1.6'
+import { ProfitViewer } from '../../src/js/profitViewer.vue.js?v=2.1.7'
 
 Vue.createApp({
     components : {
