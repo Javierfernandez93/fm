@@ -27,7 +27,7 @@ use RecursiveArrayIterator;
 class Connection {
 	# Variables privadas
 	private static $connections = array(
-		'default' => ['localhost', 'root', 'root', 'app_moneytv'], 
+		'default' => ['localhost', 'root', 'root', 'app_fm'], 
 		'world' => ['localhost', 'root', 'root', 'apps_world'],
 		'blockchain' => ['localhost','root','root','app_blockchain'] 
 	);

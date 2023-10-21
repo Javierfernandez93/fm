@@ -72,28 +72,8 @@ class CommissionPerUser extends Orm {
 					return $CommissionPerUser->save();
 				}
 			}
-		} else if($catalog_commission['commission_type'] == CatalogCommissionType::GROUP) {
-			if($user_login_id = (new UserReferral)->getLeakUserReferralIdByLevel($user_login_id_from,$catalog_commission['level']))
-			{
-				$CommissionPerUser = new CommissionPerUser;
-
-				if($CommissionPerUser->existCommission($user_login_id,$user_login_id_from,$item['package_id'],$buy_per_user_id,$catalog_commission['catalog_commission_type_id']) == false)
-				{
-					$CommissionPerUser->user_login_id = $user_login_id;
-					$CommissionPerUser->buy_per_user_id = $buy_per_user_id;
-					$CommissionPerUser->user_login_id_from = $user_login_id_from;
-					$CommissionPerUser->catalog_commission_type_id = $catalog_commission['catalog_commission_type_id'];
-					$CommissionPerUser->amount = Util::getPercentaje($item['amount'],$catalog_commission['percentaje']);
-					$CommissionPerUser->catalog_currency_id = CatalogCurrency::USD;
-					$CommissionPerUser->package_id = $item['package_id'];
-					$CommissionPerUser->status = self::PENDING_FOR_DISPERSION;
-					$CommissionPerUser->create_date = time();
-					
-					return $CommissionPerUser->save();
-				}
-			}
 		}
-		
+
 		return false;
 	}
 

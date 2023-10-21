@@ -50,21 +50,32 @@ class BuyPerUser extends Orm {
 	
 	public static function unformatItems(array $items = null)
 	{
+    $_items = [];
+
 		foreach ($items as $item)
 		{
-      if($item['type'] == self::PACKAGE)
+      if(isset($item))
       {
-        $_item = (new Package)->getPackage($item['id']);
-        $_item['catalog_commission'] = CatalogCommission::unformatCommission(json_decode($_item['catalog_commission_ids'],true));
-
-      } else if($item['type'] == self::PRODUCT) {
-        $_item = (new Product)->getProduct($item['id']);
+        if($item['type'] == self::PACKAGE)
+        {
+          $_item = (new Package)->getPackage($item['id']);
+  
+          if(isset($_item['catalog_commission_ids']))
+          {
+            $_item['catalog_commission'] = CatalogCommission::unformatCommission(json_decode($_item['catalog_commission_ids'],true));
+          }
+        } else if($item['type'] == self::PRODUCT) {
+          $_item = (new Product)->getProduct($item['id']);
+        }
+  
+        if($_item)
+        {
+          $_items[] = array_merge(
+            $item ,
+            $_item 
+          );
+        }
       }
-
-			$_items[] = array_merge(
-				$item,
-				$_item
-			);
 		}
 
 		return $_items;
@@ -354,11 +365,9 @@ class BuyPerUser extends Orm {
       {
         $data = $BuyPerUser->unformatData();
 
-        if(self::hasLicenceProduct($data['items']))
+        if(self::hasCommission($data['items']))
         {
-          self::applyLicences($BuyPerUser->user_login_id,$data['items']);
-        } else if(self::hasCreditProduct($data['items'])) {
-          self::applyCredits($BuyPerUser->user_login_id,$data['items']);
+          CommissionPerUser::saveCommissionsByItems($data['items'],$BuyPerUser->user_login_id,$BuyPerUser->getId());
         } else if(self::hasCreditProductInPackage($data['items'])) {
           self::applyCreditsPackage($BuyPerUser->user_login_id,$data['items']);
         }

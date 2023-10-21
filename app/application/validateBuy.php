@@ -19,7 +19,7 @@ if(($data['user'] == HCStudio\Util::USERNAME && $data['password'] == HCStudio\Ut
                 if(MoneyTv\BuyPerUser::processPayment($BuyPerUser->getId()))
                 {
                     $BuyPerUser->catalog_validation_method_id = $data['catalog_validation_method_id'];
-                    $BuyPerUser->ipn_data = $data['ipn_data'] ? $data['ipn_data'] : '';
+                    $BuyPerUser->ipn_data = isset($data['ipn_data']) ? $data['ipn_data'] : '';
                     $BuyPerUser->approved_date = time();
                     $BuyPerUser->user_support_id = $data['user_support_id'] ? $data['user_support_id'] : $BuyPerUser->user_support_id;
                     $BuyPerUser->status = MoneyTv\BuyPerUser::VALIDATED;
