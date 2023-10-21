@@ -64,14 +64,14 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if (in_array($route, [JFStudio\Router::StoreMarketing])) { ?>active<?php } ?>" href="../../apps/store/package">
-                                <i class="bi bi-cup-fill"></i>
+                                <i class="bi bi-cart-fill"></i>
                                 <span class="nav-link-text ms-1">Activación</span>
                             </a>
                         </li>
                         <?php if((new MoneyTv\BuyPerUser)->hasPackageBuy($UserLogin->company_id,1)) { ?>
                             <li class="nav-item">
                                 <a class="nav-link <?php if (in_array($route, [JFStudio\Router::Academy,JFStudio\Router::Academy, JFStudio\Router::AcademyLesson])) { ?>active<?php } ?>" href="../../apps/academy">
-                                    <i class="bi bi-cup-fill"></i>
+                                    <i class="bi bi-magic"></i>
                                     <span class="nav-link-text ms-1">Educación</span>
                                 </a>
                             </li>
