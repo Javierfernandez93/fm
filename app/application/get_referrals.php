@@ -23,13 +23,12 @@ if($UserLogin->_loaded === true)
 }
 
 function formatData(array $referrals = null) : array {
-    $LicencePerUser = new MoneyTv\LicencePerUser;
+    $BuyPerUser = new MoneyTv\BuyPerUser;
     $Country = new World\Country;
-    
-    return array_map(function($referral) use($Country,$LicencePerUser) {
+    return array_map(function($referral) use($Country,$BuyPerUser) {
         $referral['country'] = $Country->getCountryName($referral['country_id']);
         $referral['phone_code'] = $Country->getPhoneCodeByCountryId($referral['country_id']);
-        $referral['active'] = $LicencePerUser->isActive($referral['user_login_id']);
+        $referral['active'] = $BuyPerUser->hasPackageBuy($referral['user_login_id'],1);
 
         return $referral;
     },$referrals);
