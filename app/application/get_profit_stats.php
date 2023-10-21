@@ -10,14 +10,12 @@ if($UserLogin->_loaded === true)
 {
     if($Wallet = BlockChain\Wallet::getWallet($UserLogin->company_id))
     {
-        $amount = $UserLogin->company_id == 1 ? 34 : 0;
-        $licences = (new MoneyTv\LicencePerUser)->getLicencesCount($UserLogin->company_id);
         $users = (new MoneyTv\UserReferral)->getReferralCount($UserLogin->company_id);
         $credits = (new MoneyTv\CreditPerUser)->getCreditsAmount($UserLogin->company_id);
+        $amount = (new MoneyTv\CommissionPerUser)->getSum($UserLogin->company_id);
         
         $data['balance'] = [
             'amount' => $amount ? $amount : 0,
-            'licences' => $licences ? $licences : 0,
             'users' => $users ? $users : 0,
             'credits' => $credits ? $credits : 0,
         ];
