@@ -1,4 +1,4 @@
-import { User } from '../../src/js/user.module.js?v=2.1.6'   
+import { User } from '../../src/js/user.module.js?v=2.1.7'   
 
 const ProfitViewer = {
     name : 'profit-viewer',
@@ -37,7 +37,7 @@ const ProfitViewer = {
                                 <div class="numbers">
                                     <p class="text-sm mb-0 text-white font-weight-bold">Total de ganancias</p>
                                     <h2 class="font-weight-bolder text-white mb-0">
-                                        $ {{ balance.amount.numberFormat(0) }}
+                                        $ {{ balance.amount.numberFormat(2) }}
                                     </h2>
                                 </div>
                             </div>
