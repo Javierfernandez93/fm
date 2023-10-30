@@ -9,7 +9,7 @@ use JFStudio\Curl;
 use MoneyTv\ApiCredential;
 
 class ApiWhatsApp {
-    const END_POINT = 'https://www.mizuum.com/app/services/';
+    const END_POINT = 'https://www.zuppi.io/app/services/';
     // const END_POINT = 'http://localhost:8888/mizuum/app/services/';
 
 	public function __construct() {
@@ -46,10 +46,8 @@ class ApiWhatsApp {
                     'image' => $data['image'],
                     'contact' => self::sanitizeContact($data['contact'])
                 ],(new ApiCredential)->getApiCredentials(91)));
-
-                $response = $Curl->getResponse(true);
                 
-                return $response;
+                return $Curl->getResponse(true);
             }
 
             return false;
