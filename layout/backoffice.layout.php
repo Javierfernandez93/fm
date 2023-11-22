@@ -68,7 +68,7 @@
                                 <span class="nav-link-text ms-1">Activación</span>
                             </a>
                         </li>
-                        <?php if((new MoneyTv\BuyPerUser)->hasPackageBuy($UserLogin->company_id,1)) { ?>
+                        <?php if($UserLogin->isActiveOnPackage(1)) { ?>
                             <li class="nav-item">
                                 <a class="nav-link <?php if (in_array($route, [JFStudio\Router::Academy,JFStudio\Router::Academy, JFStudio\Router::AcademyLesson])) { ?>active<?php } ?>" href="../../apps/academy">
                                     <i class="bi bi-magic"></i>
@@ -101,7 +101,7 @@
                         </li>
                     <?php } ?>
 
-
+                    <?php if($UserLogin->isActiveOnPackage(1)) { ?>
                     <li class="nav-item">
                         <a data-bs-toggle="collapse" href="#pagesCredits" class="nav-link collapsed <?php if (in_array($route,[JFStudio\Router::StoreCredit,JFStudio\Router::Iptv,JFStudio\Router::IptvAddClient])) { ?>active<?php } ?>" aria-controls="pagesCredits" role="button" aria-expanded="false">
                             <i class="bi bi-tv"></i>
@@ -156,6 +156,7 @@
                             </ul>
                         </div>
                     </li>
+                    <?php } ?>
                     
                     <li class="nav-item d-none">
                         <a data-bs-toggle="collapse" href="#pagesGames" class="nav-link collapsed <?php if (in_array($route,[JFStudio\Router::Game,JFStudio\Router::GameGuide])) { ?>active<?php } ?>" aria-controls="pagesGames" role="button" aria-expanded="false">
@@ -236,12 +237,14 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link <?php if (in_array($route,[JFStudio\Router::Landing])) { ?>active<?php } ?>" href="../../apps/backoffice/landings">
-                            <i class="bi bi-card-image"></i>
-                            <span class="nav-link-text ms-1"><?php echo JFStudio\Router::getName(JFStudio\Router::Landing); ?></span>
-                        </a>
-                    </li>
+                    <?php if($UserLogin->isActiveOnPackage(1)) { ?>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if (in_array($route,[JFStudio\Router::Landing])) { ?>active<?php } ?>" href="../../apps/backoffice/landings">
+                                <i class="bi bi-card-image"></i>
+                                <span class="nav-link-text ms-1"><?php echo JFStudio\Router::getName(JFStudio\Router::Landing); ?></span>
+                            </a>
+                        </li>
+                    <?php } ?>
 
                     <li class="nav-item">
                         <a class="nav-link <?php if (in_array($route,[JFStudio\Router::Help])) { ?>active<?php } ?>" href="../../apps/ticket/">
@@ -250,7 +253,7 @@
                         </a>
                     </li>
 
-                    <?php if((new MoneyTv\LicencePerUser)->isActive($UserLogin->company_id)) { ?> 
+                    <?php if($UserLogin->isActiveOnPackage(1)) { ?>
                         <li class="nav-item">
                             <a class="nav-link <?php if (in_array($route,[JFStudio\Router::Movies])) { ?>active<?php } ?>" href="../../apps/movies/">
                                 <i class="bi bi-gift"></i>

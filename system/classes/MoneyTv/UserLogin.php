@@ -765,4 +765,38 @@ class UserLogin extends Orm {
       return $this->_data['user_account']['landing'] ? $this->_data['user_account']['landing'] : self::REFERRAL_PATH.$this->company_id;
     }
   }
+
+  public function isActiveOnPackage(int $package_id = null,int $additionalDays = 0) : bool
+  {
+    $active = false;
+    
+    if($buys = (new BuyPerUser)->getAll($this->company_id,"AND buy_per_user.status = '".BuyPerUser::VALIDATED."'"))
+    {
+      foreach($buys as $buy)
+      {
+        if($data = BuyPerUser::_unformatData($buy))
+        {
+          if(BuyPerUser::hasPackageOnItems($data['items'],$package_id))
+          {
+            $days = 30 + $additionalDays;
+
+            $end_date = strtotime("+ ".$days." days", $buy['approved_date']);
+            
+            if(time() < $end_date)
+            {
+              $active = true;
+              break;
+            }
+          }
+        }
+      }
+    }
+
+    return $active;
+  }
+  
+  public function isReadyToDelete() : bool
+  {
+    return !$this->isActiveOnPackage(1,3);
+  }
 }

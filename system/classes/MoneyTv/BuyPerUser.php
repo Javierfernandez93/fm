@@ -113,6 +113,7 @@ class BuyPerUser extends Orm {
                 {$this->tblName}.status,
                 {$this->tblName}.item,
                 {$this->tblName}.create_date,
+                {$this->tblName}.approved_date,
                 {$this->tblName}.checkout_data
               FROM 
                 {$this->tblName}

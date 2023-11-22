@@ -12,6 +12,7 @@
     
     <!-- <counter-viewer></counter-viewer> -->
 
+    <accountactivation-viewer></accountactivation-viewer>
     <zuumsignup-viewer></zuumsignup-viewer>
     
     <notice-viewer></notice-viewer>

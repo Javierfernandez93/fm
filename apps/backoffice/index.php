@@ -8,6 +8,7 @@ if($UserLogin->_loaded === false) {
 	HCStudio\Util::redirectTo(TO_ROOT."/apps/login/");
 }
 
+$UserLogin->isActiveOnPackage(1);
 $UserLogin->checkRedirection();
 
 $Layout = JFStudio\Layout::getInstance();

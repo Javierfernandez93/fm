@@ -421,6 +421,9 @@ class User extends Http {
     existUser(data, callback) {
         return this.call('../../app/application/existUser.php', data, callback, null, null);
     }
+    getAccountActivation(data, callback) {
+        return this.call('../../app/application/getAccountActivation.php', data, callback, null, null);
+    }
 }
 
 export { User }
