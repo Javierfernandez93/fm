@@ -431,7 +431,6 @@ class BuyPerUser extends Orm {
     return false;
   }
   
-  
   public static function hasPackageOnItems(array $items = null,int $package_id = null) : bool
   {
     $found = false;
@@ -831,5 +830,20 @@ class BuyPerUser extends Orm {
     }
 
     return [];
+  }
+
+  public function getAllUsersWithBuy() : array|bool
+  {
+    $sql = "SELECT 
+                {$this->tblName}.user_login_id
+              FROM 
+                {$this->tblName}
+              WHERE 
+                {$this->tblName}.status = '".self::VALIDATED."'
+              GROUP BY 
+                {$this->tblName}.user_login_id
+              ";
+
+    return $this->connection()->rows($sql);
   }
 }

@@ -768,9 +768,14 @@ class UserLogin extends Orm {
 
   public function isActiveOnPackage(int $package_id = null,int $additionalDays = 0) : bool
   {
+    return $this->_isActiveOnPackage($package_id,$this->company_id,$additionalDays);
+  }
+  
+  public function _isActiveOnPackage(int $package_id = null,int $user_login_id = null,int $additionalDays = 0) : bool
+  {
     $active = false;
     
-    if($buys = (new BuyPerUser)->getAll($this->company_id,"AND buy_per_user.status = '".BuyPerUser::VALIDATED."'"))
+    if($buys = (new BuyPerUser)->getAll($user_login_id,"AND buy_per_user.status = '".BuyPerUser::VALIDATED."'"))
     {
       foreach($buys as $buy)
       {
@@ -798,5 +803,29 @@ class UserLogin extends Orm {
   public function isReadyToDelete() : bool
   {
     return !$this->isActiveOnPackage(1,3);
+  }
+
+  public function disableAccount(int $user_login_id = null)
+  {
+    return $this->_disableAccount($this->company_id);
+  }
+  
+  public function _disableAccount(int $user_login_id = null)
+  {
+    if(!$user_login_id)
+    {
+      return false;
+    }
+
+    $UserLogin = new self(false,false);
+    
+    if(!$UserLogin->loadWhere("user_login_id = ?",$user_login_id))
+    {
+      return false;
+    }
+
+    $UserLogin->status = -1;
+    
+    return $UserLogin->save();
   }
 }
