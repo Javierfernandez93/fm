@@ -805,11 +805,11 @@ class UserLogin extends Orm {
     return !$this->isActiveOnPackage(1,3);
   }
 
-  public function disableAccount(int $user_login_id = null)
+  public function disableAccount()
   {
     return $this->_disableAccount($this->company_id);
   }
-  
+
   public function _disableAccount(int $user_login_id = null)
   {
     if(!$user_login_id)
