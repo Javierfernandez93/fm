@@ -563,6 +563,7 @@ class ServicePerClient extends Orm {
   */
   public static function getPackageId(bool $adult = null,int $month = null)
   { 
+    return 148; // 3x1
     return 135; // 2x1
     return 116; // 1 month
 
